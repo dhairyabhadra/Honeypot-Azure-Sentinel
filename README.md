@@ -26,3 +26,26 @@ SIEM, short for Security Information and Event Management System, serves as a cr
 * **Custom PowerShell script**: This script would allow us to fetch logs from EventViewer in Windows.
 * **Ipgeolocation.io**: API which allows to get geolocation from IP address.
 * **RDP**: Windows Remote Desktop Protocols allows us to connect to the VM and configure to open up the Fire wall.
+
+### Log File Overview:
+
+---
+
+Running the Custom Powershell scipt would provide us the logs containing the geo location, ip address, timestamp and the username they are trying to use.
+
+Credits to **Josh Madakor([Github](https://github.com/joshmadakor1/Sentinel-Lab/tree/main))** for providing the custom powershell script which allows the fetch the geo location, ip address, timestamp, username from Windows Event Viewer where event Id = 4625 (unsuccessful logons).
+
+![1711469311731](image/README/1711469311731.png)
+
+### World Map of Incoming attack after 30 mins since the machine started (Built custom logs including geodata)
+
+---
+
+![1711470157656](image/README/1711470157656.png)
+
+
+### World Map of Incoming Attack after 8 hours (Built custom Logs including geodata)
+
+---
+
+![1711470238339](image/README/1711470238339.png)
